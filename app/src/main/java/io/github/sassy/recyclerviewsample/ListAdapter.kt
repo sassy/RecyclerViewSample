@@ -7,7 +7,7 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import kotlinx.android.synthetic.main.list_item.view.*
 
-class ListAdapter(val datas: List<String>) : RecyclerView.Adapter<ListAdapter.ListItemHolder>() {
+class ListAdapter(private val datas: List<String>) : RecyclerView.Adapter<ListAdapter.ListItemHolder>() {
 
     inner class ListItemHolder(val mView: View): RecyclerView.ViewHolder(mView) {
         val textView : TextView = mView.text1
